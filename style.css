@@ -1,6 +1,6 @@
 header{
-    background-color: #ffffff;
-    border-bottom: 2px solid #021b29;
+    background-color: #5250da;
+    border-bottom: 1px solid rgb(2, 29, 44);
     height: 70px;
     display: flex;
     align-items: center;
@@ -18,10 +18,9 @@ ul{
 }
 
 a{
-    color:  #000000;
+    color:  #ffffff;
     opacity: 1;
     text-decoration: none;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 30px;
     margin-right: 100px;
 }
@@ -32,14 +31,9 @@ a:hover{
 
 body{
     margin: 0;
+    font-family: sans-serif;
 }
 
-p{
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-}
-button{
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-}
 
 .flex-container{
     display: flex;
@@ -75,24 +69,23 @@ button{
 }
 
 .polaroid button {
-  align-items: center;
-  background-color: #d8faff;
-  border: 2px solid #111111;
-  border-radius: 8px;
-  box-sizing: border-box;
-  color: #111;
-  cursor: pointer;
-  display: flex;
-  font-size: 14px;
-  height: 48px;
-  justify-content: center;
-  line-height: 24px;
-  max-width: 100%;
-  padding: 0 25px;
+    border: none;
+    align-items: center;
+    background-color: #5250da;
+    border-radius: 2px;
+    color: #ffffff;
+    cursor: pointer;
+    display: flex;
+    font-size: 17px;
+    height: 48px;
+    justify-content: center;
+        
+    padding: 0 25px;
+    font-family: sans-serif;
 }
 
 .polaroid button:hover{
-    background-color: #acdaf5; 
+    background-color: #4b5ec7; 
     font-weight: 150;
     font-size: 17px;
 }
@@ -106,4 +99,52 @@ button{
     .polaroid{
         width: 70%;
     }
+    header{
+        height: auto;
+    }
+
+    ul{
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+    }
+
+    a{
+        margin-right: 0;
+        font-size: 25px;
+    }
+
+    nav{
+        padding: 5px;
+    }
+    li{
+        margin-bottom: 10px;
+    }
+}
+
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+
+    height: 40px;
+    width: 100%;
+
+    background-color: #5250da;
+
+    font-family: 15px;
+    color: rgb(156, 156, 156);
+    text-align: center;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+aside {
+    width: 30%;
+    padding-left: 15px;
+    margin-left: 15px;
+    float: right;
+    font-style: italic;
+    background-color: lightgray;
 }
