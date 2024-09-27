@@ -4,7 +4,7 @@
     // polaroid.classList.toggle("dark-mode-body");
 
     // Get the modal
-    var modal = document.getElementById("myModal");
+    var modal = document.getElementById("modal1");
 
     // Get the button that opens the modal
     var btn = document.getElementById("learn_more1");
