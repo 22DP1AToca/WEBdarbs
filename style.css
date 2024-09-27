@@ -1,3 +1,16 @@
+body {
+    background-color: white;
+    color: black;
+    margin: 0;
+    font-family: sans-serif;
+    
+}
+  
+/* .dark-mode-body{
+    background-color: #1a1823;
+    color: white;
+} */
+
 header{
     background-color: #5250da;
     border-bottom: 1px solid rgb(2, 29, 44);
@@ -9,6 +22,9 @@ header{
 
 nav{
     padding: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
 }
 
 ul{
@@ -29,10 +45,6 @@ a:hover{
     opacity: 0.65;
 }
 
-body{
-    margin: 0;
-    font-family: sans-serif;
-}
 
 
 .flex-container{
@@ -53,6 +65,10 @@ body{
     align-items: center;
     flex-direction: column;
 }
+
+/* .polaroid-dark-mode{
+    background-color: #2f2d38;
+} */
 
 .polaroid p{
     font-size: 16px;
@@ -147,8 +163,10 @@ aside {
     float: right;
     font-style: italic;
     background-color: lightgray;
+    margin-right: 10px;
 }
 
 .text{
     padding: 0 10px 0 10px;
 }
+
