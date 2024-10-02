@@ -13,8 +13,7 @@ body {
 
 /*-----------------------------Header---------------------------*/
 header{
-    background-color: #5250da;
-    border-bottom: 1px solid rgb(2, 29, 44);
+    background-image: linear-gradient(to bottom, #5250da, #1b88bb);
     height: 70px;
     display: flex;
     align-items: center;
@@ -65,17 +64,40 @@ a:hover{
     justify-content: center;
     align-items: center;
     flex-direction: column;
+
+    transform: scale(1); /* initial scale */
 }
 
 .polaroid:hover{
     box-shadow: 0px 10px 20px 5px rgba(0, 0, 0, 0.5);
-    transform: translateY(-3px);
+    /* transform: translateY(-3px); */
+
+    animation: zoomIn 0.5s forwards; /* trigger the animation on hover */
 }
 
-/* .polaroid-dark-mode{
-    background-color: #2f2d38;
-} */
+.polaroid:not(:hover) {
+    animation: zoomOut 0.5s forwards; /* trigger the zoom-out animation when not hovered */
+  }
 
+  
+  
+@keyframes zoomIn {
+    0% {
+      transform: scale(1); /* initial scale */
+    }
+    100% {
+      transform: scale(1.1); /* final scale */
+    }
+}
+
+@keyframes zoomOut {
+    0% {
+      transform: scale(1.1); /* initial scale (zoomed in) */
+    }
+    100% {
+      transform: scale(1); /* final scale (zoomed out) */
+    }
+  }
 
 .polaroid p{
     font-size: 16px;
@@ -90,7 +112,7 @@ a:hover{
 .polaroid button {
     border: none;
     align-items: center;
-    background-color: #5250da;
+    background-image: linear-gradient(to bottom, #5250da, #1b88bb);
     border-radius: 2px;
     color: #ffffff;
     cursor: pointer;
@@ -104,9 +126,7 @@ a:hover{
 }
 
 .polaroid button:hover{
-    background-color: #4b5ec7; 
-    font-weight: 150;
-    font-size: 17px;
+    background-image: linear-gradient(to bottom, #452cb4, #106891); 
 }
 
 /*Modal*/
@@ -125,7 +145,7 @@ a:hover{
   
   .modal-content {
     background-color: #fefefe;
-    margin: 15% auto; 
+    margin: 7% auto; 
     padding: 20px;
     border: 1px solid #888;
     width: 80%; 
