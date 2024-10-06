@@ -1,20 +1,56 @@
-|<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@40,400,0,0" />
+    <script src="main.js" defer></script>
 </head>
 <body>
     <header>
-        <nav>
+        <!-- Desktop Nav (hidden on mobile) -->
+        <nav class="desktop-nav">
+            <span class="material-symbols-outlined dark-mode-toggle" style="font-size: 36px;">dark_mode</span>
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About</a></li>
                 <li><a href="contact.html">Contact</a></li>
+                <li class="dropdown">
+                    <a href="#" class="nav-link dropdown-toggle">Dropdown</a>
+                    <ul class="dropdown-content">
+                    <li><a href="index.html" class="dropdown-link">Home</a></li>
+                    <li><a href="about.html" class="dropdown-link">About</a></li>
+                    <li><a href="contact.html" class="dropdown-link">Contact</a></li>
+                    </ul>
+                </li>
             </ul>
         </nav>
+        
+        <!-- Mobile Nav (hidden on desktop) -->
+        <nav class="mobile-nav">
+            <span class="material-symbols-outlined dark-mode-toggle" style="font-size: 36px;">dark_mode</span>
+            <span class="material-symbols-outlined hamburger"  style="font-size: 36px;">menu </span>
+            <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        <!--    <li><a href="#" class="dropdown-link">Dropdown</a>
+                <ul>
+                <li><a href="index.html" class="dropdown-link">Home</a></li>
+                <li><a href="about.html" class="dropdown-link">About</a></li>
+                <li><a href="contact.html" class="dropdown-link">Contact</a></li>
+                </ul>
+            </li>
+            </ul> -->
+        </nav>         
     </header>
+
+    <main>
+        <p>Welcome to the about page.</p>
+    </main>
 </body>
+
 </html>
